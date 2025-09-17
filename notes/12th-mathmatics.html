@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>StudyNote – PSEB & CBSE (English/Punjabi)</title>
+<style>
+  :root{
+    --brand:#2f89ff; --brand2:#6dd5fa; --ink:#1f2937; --bg:#f4f7fc; --card:#ffffff;
+    --muted:#6b7280; --ring:rgba(47,137,255,.25); --brand-cbse:#22c55e; --brand2-cbse:#86efac;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; background:var(--bg);color:var(--ink)}
+  .wrap{max-width:1200px;margin:auto;padding:28px 18px}
+  .page-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .page-title .emoji{font-size:32px}
+  .page-title h1{margin:0;font-size:28px}
+  .page-title .crumbs{font-size:13px;color:var(--muted)}
+  .boards{display:grid;gap:28px}
+  .board-row{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media (max-width:880px){.board-row{grid-template-columns:1fr}}
+  .column{background:transparent}
+  .subject-hero{
+    background:linear-gradient(135deg,var(--brand),var(--brand2));
+    color:#fff;border-radius:18px;padding:18px 20px;box-shadow:0 16px 40px rgba(47,137,255,.25);
+    display:flex;align-items:center;gap:14px;margin-bottom:16px
+  }
+  .subject-hero.cbse{background:linear-gradient(135deg,var(--brand-cbse),var(--brand2-cbse));box-shadow:0 16px 40px rgba(34,197,94,.25)}
+  .subject-emoji{font-size:40px;filter:drop-shadow(0 6px 12px rgba(0,0,0,.15))}
+  h2,h3{margin:0}
+  .hero-lines{line-height:1.15}
+  .hero-lines h2{font-size:22px}
+  .hero-lines .crumbs{margin-top:4px;font-size:13px;opacity:.95}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media (max-width:620px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.08);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; border:1px solid transparent;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(0,0,0,.12);border-color:var(--ring)}
+  .card h3{margin:2px 0 8px;font-size:18px}
+  .card p{margin:0;color:var(--muted);font-size:14px}
+  .pill{position:absolute;top:12px;right:12px;font-size:12px;background:#eef4ff;color:#2b5cff;padding:6px 10px;border-radius:999px;border:1px solid rgba(43,92,255,.15)}
+  .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .btn{display:inline-block;text-decoration:none;background:#eff6ff;border:1px solid rgba(47,137,255,.25);color:#1154d6;padding:10px 12px;border-radius:12px;font-size:14px}
+  footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+  .pa{font-family:"Noto Sans Gurmukhi","Raavi",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="page-title">
+      <div class="emoji">📚</div>
+      <div>
+        <h1>StudyNote – Board-wise Resources</h1>
+        <div class="crumbs">PSEB (Top) • CBSE (Bottom) • English & Punjabi Medium</div>
+      </div>
+    </div>
+
+    <div class="boards">
+      <!-- ================= PSEB ROW ================= -->
+      <div class="board-row" aria-label="PSEB">
+        <!-- Left: English Medium (PSEB) -->
+        <div class="column">
+          <div class="subject-hero">
+            <div class="subject-emoji">➗</div>
+            <div class="hero-lines">
+              <h2>Mathematics – PSEB (English Medium)</h2>
+              <div class="crumbs">StudyNote • Class 12 • PSEB</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <div class="pill">Chapter-wise</div>
+              <h3>📚 Chapter-wise Solutions</h3>
+              <p>All chapters with step-by-step solutions.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Ch 1 – Relations & Functions</a>
+                <a class="btn" href="#">Ch 2 – Inverse Trigonometric Functions</a>
+                <a class="btn" href="#">Ch 3 – Matrices</a>
+                <a class="btn" href="#">Ch 4 – Determinants</a>
+                <a class="btn" href="#">Ch 5 – Continuity & Differentiability</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Practice</div>
+              <h3>❓ MCQ</h3>
+              <p>Objective questions for practice.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">MCQ – Ch 1</a>
+                <a class="btn" href="#">MCQ – Ch 2</a>
+                <a class="btn" href="#">MCQ – Ch 3</a>
+                <a class="btn" href="#">Full Syllabus MCQ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Listen</div>
+              <h3>🎧 Audio Lessons</h3>
+              <p>Listen & revise formulas quickly.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Audio – Ch 1</a>
+                <a class="btn" href="#">Audio – Ch 2</a>
+                <a class="btn" href="#">Audio – Ch 3</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Exam</div>
+              <h3>📝 Sample Papers</h3>
+              <p>Board-style practice papers.</p>
+              <div class="btnrow">
+                <a class="btn" href="https://drive.google.com/file/d/1UGUMyzHxp4Q30M5T2dWef4RbSSfwPCmA/view?usp=sharing">Sample Paper – Set A</a>
+                <a class="btn" href="#">Sample Paper – Set B</a>
+                <a class="btn" href="#">Answer Keys</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Right: Punjabi Medium (PSEB) -->
+        <div class="column">
+          <div class="subject-hero">
+            <div class="subject-emoji">➗</div>
+            <div class="hero-lines">
+              <h2 class="pa">ਗਣਿਤ – PSEB (ਪੰਜਾਬੀ ਮਾਧਿਅਮ)</h2>
+              <div class="crumbs pa">StudyNote • ਕਲਾਸ 12 • PSEB</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <div class="pill pa">ਚੈਪਟਰ-ਵਾਈਜ਼</div>
+              <h3 class="pa">📚 ਅਧਿਆਇ ਅਨੁਸਾਰ ਹਲ</h3>
+              <p class="pa">ਸਾਰੇ ਅਧਿਆਇ ਸੌਖੀਆਂ ਵਿਆਖਿਆਵਾਂ ਨਾਲ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">ਅਧਿਆਇ 1 – ਸੰਬੰਧ ਅਤੇ ਫੰਕਸ਼ਨ</a>
+                <a class="btn" href="#">ਅਧਿਆਇ 2 – ਉਲਟ ਤ੍ਰਿਕੋਣਮਿਤੀ</a>
+                <a class="btn" href="#">ਅਧਿਆਇ 3 – ਮੈਟ੍ਰਿਕਸ</a>
+                <a class="btn" href="#">ਅਧਿਆਇ 4 – ਡਿਟਰਮਿਨੈਂਟਸ</a>
+                <a class="btn" href="#">ਅਧਿਆਇ 5 – ਸਤਤਤਾ ਅਤੇ ਅੰਤਰਕਾਲ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill pa">ਅਭਿਆਸ</div>
+              <h3 class="pa">❓ MCQ</h3>
+              <p class="pa">ਚੈਪਟਰ-ਵਾਈਜ਼ ਅਤੇ ਫੁੱਲ ਸਿਲੇਬਸ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">MCQ – ਅਧਿਆਇ 1</a>
+                <a class="btn" href="#">MCQ – ਅਧਿਆਇ 2</a>
+                <a class="btn" href="#">MCQ – ਅਧਿਆਇ 3</a>
+                <a class="btn" href="#">ਫੁੱਲ ਸਿਲੇਬਸ MCQ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill pa">ਸੁਣੋ</div>
+              <h3 class="pa">🎧 ਆਡੀਓ ਪਾਠ</h3>
+              <p class="pa">ਸੂਤਰ ਯਾਦ ਕਰਨ ਲਈ ਆਡੀਓ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">Audio – ਅਧਿਆਇ 1</a>
+                <a class="btn" href="#">Audio – ਅਧਿਆਇ 2</a>
+                <a class="btn" href="#">Audio – ਅਧਿਆਇ 3</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill pa">ਇਮਤਿਹਾਨ</div>
+              <h3 class="pa">📝 ਸੈਂਪਲ ਪੇਪਰ</h3>
+              <p class="pa">ਪ੍ਰੀਖਿਆ ਤਿਆਰੀ ਲਈ ਪੇਪਰ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">Sample Paper – Set A</a>
+                <a class="btn" href="#">Sample Paper – Set B</a>
+                <a class="btn" href="#">Answer Keys</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= CBSE ROW ================= -->
+      <div class="board-row" aria-label="CBSE">
+        <!-- Left: English Medium (CBSE) -->
+        <div class="column">
+          <div class="subject-hero cbse">
+            <div class="subject-emoji">➗</div>
+            <div class="hero-lines">
+              <h2>Mathematics – CBSE (English Medium)</h2>
+              <div class="crumbs">StudyNote • Class 12 • CBSE</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <div class="pill">Chapter-wise</div>
+              <h3>📚 Chapter-wise Solutions</h3>
+              <p>All chapters with detailed steps.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Ch 1 – Relations & Functions</a>
+                <a class="btn" href="#">Ch 2 – Matrices</a>
+                <a class="btn" href="#">Ch 3 – Determinants</a>
+                <a class="btn" href="#">More Chapters</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Practice</div>
+              <h3>❓ MCQ</h3>
+              <p>Chapter-wise and mixed tests.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">MCQ – Set 1</a>
+                <a class="btn" href="#">MCQ – Set 2</a>
+                <a class="btn" href="#">MCQ – Set 3</a>
+                <a class="btn" href="#">Full Syllabus MCQ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Listen</div>
+              <h3>🎧 Audio Lessons</h3>
+              <p>Quick formula revision audios.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Audio – Set 1</a>
+                <a class="btn" href="#">Audio – Set 2</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Exam</div>
+              <h3>📝 Sample Papers</h3>
+              <p>Practice exam papers.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Sample Paper – Set A</a>
+                <a class="btn" href="#">Sample Paper – Set B</a>
+                <a class="btn" href="#">Answer Keys</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Right: Punjabi Medium (CBSE) -->
+        <div class="column">
+          <div class="subject-hero cbse">
+            <div class="subject-emoji">➗</div>
+            <div class="hero-lines">
+              <h2 class="pa">ਗਣਿਤ – CBSE (ਪੰਜਾਬੀ ਮਾਧਿਅਮ)</h2>
+              <div class="crumbs pa">StudyNote • ਕਲਾਸ 12 • CBSE</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <div class="pill pa">ਚੈਪਟਰ-ਵਾਈਜ਼</div>
+              <h3 class="pa">📚 ਅਧਿਆਇ ਅਨੁਸਾਰ ਹਲ</h3>
+              <p class="pa">ਸਾਰੇ ਚੈਪਟਰਾਂ ਦੀਆਂ ਹੱਲ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">ਅਧਿਆਇ 1 – ਸੰਬੰਧ ਅਤੇ ਫੰਕਸ਼ਨ</a>
+                <a class="btn" href="#">ਅਧਿਆਇ 2 – ਮੈਟ੍ਰਿਕਸ</a>
+                <a class="btn" href="#">ਅਧਿਆਇ 3 – ਡਿਟਰਮਿਨੈਂਟਸ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill pa">ਅਭਿਆਸ</div>
+              <h3 class="pa">❓ MCQ</h3>
+              <p class="pa">ਪ੍ਰੈਕਟਿਸ ਪ੍ਰਸ਼ਨ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">MCQ – Set 1</a>
+                <a class="btn" href="#">MCQ – Set 2</a>
+                <a class="btn" href="#">MCQ – Set 3</a>
+                <a class="btn" href="#">Full Syllabus MCQ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill pa">ਸੁਣੋ</div>
+              <h3 class="pa">🎧 ਆਡੀਓ ਪਾਠ</h3>
+              <p class="pa">ਗਣਿਤ ਫਾਰਮੂਲੇ ਯਾਦ ਕਰਨ ਲਈ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">Audio – Set 1</a>
+                <a class="btn" href="#">Audio – Set 2</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill pa">ਇਮਤਿਹਾਨ</div>
+              <h3 class="pa">📝 ਸੈਂਪਲ ਪੇਪਰ</h3>
+              <p class="pa">ਬੋਰਡ-ਸਟਾਈਲ ਪ੍ਰੈਕਟਿਸ ਪੇਪਰ।</p>
+              <div class="btnrow pa">
+                <a class="btn" href="#">Sample Paper – Set A</a>
+                <a class="btn" href="#">Sample Paper – Set B</a>
+                <a class="btn" href="#">Answer Keys</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 StudyNote. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+
