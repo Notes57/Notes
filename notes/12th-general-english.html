@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>StudyNote – PSEB & CBSE (English Medium)</title>
+<style>
+  :root{
+    --brand:#2f89ff; --brand2:#6dd5fa; --ink:#1f2937; --bg:#f4f7fc; --card:#ffffff;
+    --muted:#6b7280; --ring:rgba(47,137,255,.25); --brand-cbse:#22c55e; --brand2-cbse:#86efac;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; background:var(--bg);color:var(--ink)}
+  .wrap{max-width:1200px;margin:auto;padding:28px 18px}
+
+  /* Top page title */
+  .page-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .page-title .emoji{font-size:32px}
+  .page-title h1{margin:0;font-size:28px}
+  .page-title .crumbs{font-size:13px;color:var(--muted)}
+
+  /* Board rows (PSEB row + CBSE row) */
+  .boards{display:grid;gap:28px}
+  .board-row{display:grid;grid-template-columns:1fr;gap:22px}
+
+  /* Column */
+  .column{background:transparent}
+  .subject-hero{
+    background:linear-gradient(135deg,var(--brand),var(--brand2));
+    color:#fff;border-radius:18px;padding:18px 20px;box-shadow:0 16px 40px rgba(47,137,255,.25);
+    display:flex;align-items:center;gap:14px;margin-bottom:16px
+  }
+  .subject-hero.cbse{ /* green theme for CBSE */
+    background:linear-gradient(135deg,var(--brand-cbse),var(--brand2-cbse));
+    box-shadow:0 16px 40px rgba(34,197,94,.25);
+  }
+  .subject-emoji{font-size:40px;filter:drop-shadow(0 6px 12px rgba(0,0,0,.15))}
+  h2,h3{margin:0}
+  .hero-lines{line-height:1.15}
+  .hero-lines h2{font-size:22px}
+  .hero-lines .crumbs{margin-top:4px;font-size:13px;opacity:.95}
+
+  /* Cards grid */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media (max-width:620px){.grid{grid-template-columns:1fr}}
+
+  .card{
+    background:var(--card);border-radius:16px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.08);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; border:1px solid transparent;
+    position:relative;overflow:hidden
+  }
+  .card:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(0,0,0,.12);border-color:var(--ring)}
+  .card h3{margin:2px 0 8px;font-size:18px}
+  .card p{margin:0;color:var(--muted);font-size:14px}
+  .pill{
+    position:absolute;top:12px;right:12px;font-size:12px;background:#eef4ff;color:#2b5cff;
+    padding:6px 10px;border-radius:999px;border:1px solid rgba(43,92,255,.15)
+  }
+  .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .btn{
+    display:inline-block;text-decoration:none;background:#eff6ff;border:1px solid rgba(47,137,255,.25);
+    color:#1154d6;padding:10px 12px;border-radius:12px;font-size:14px
+  }
+  footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="page-title">
+      <div class="emoji">📚</div>
+      <div>
+        <h1>StudyNote – Board-wise Resources</h1>
+        <div class="crumbs">PSEB (Top) • CBSE (Bottom) • English Medium</div>
+      </div>
+    </div>
+
+    <div class="boards">
+      <!-- ================= PSEB ROW ================= -->
+      <div class="board-row" aria-label="PSEB">
+        <div class="column">
+          <div class="subject-hero">
+            <div class="subject-emoji">📖</div>
+            <div class="hero-lines">
+              <h2>English – PSEB (English Medium)</h2>
+              <div class="crumbs">StudyNote • Class 12 • PSEB</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <div class="pill">Chapter-wise</div>
+              <h3>📚 Chapter-wise Solutions</h3>
+              <p>All chapters with easy explanations & answers.</p>
+              <div class="btnrow">
+                <a class="btn" href="https://drive.google.com/file/d/1fSPZHCQYRtJafgplFjpXq0uehoIM_wkH/view?usp=sharing">Ch 1 – Chapter 1 – Hassan’s Attendance Problem</a>
+                <a class="btn" href="#">Ch 2 – Poetry</a>
+                <a class="btn" href="#">Ch 3 – Supplementary</a>
+                <a class="btn" href="#">More Chapters</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Practice</div>
+              <h3>❓ MCQ</h3>
+              <p>Chapter-wise and mixed objective tests.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">MCQ – Prose</a>
+                <a class="btn" href="#">MCQ – Poetry</a>
+                <a class="btn" href="#">MCQ – Supplementary</a>
+                <a class="btn" href="#">Full Syllabus MCQ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Listen</div>
+              <h3>🎧 Audio Lessons</h3>
+              <p>Listen & revise on the go.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Audio – Prose</a>
+                <a class="btn" href="#">Audio – Poetry</a>
+                <a class="btn" href="#">Audio – Supplementary</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Exam</div>
+              <h3>📝 Sample Papers</h3>
+              <p>Board-style papers with marking scheme.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Sample Paper – Set A</a>
+                <a class="btn" href="#">Sample Paper – Set B</a>
+                <a class="btn" href="#">Answer Keys</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= CBSE ROW ================= -->
+      <div class="board-row" aria-label="CBSE">
+        <div class="column">
+          <div class="subject-hero cbse">
+            <div class="subject-emoji">📖</div>
+            <div class="hero-lines">
+              <h2>English – CBSE (English Medium)</h2>
+              <div class="crumbs">StudyNote • Class 12 • CBSE</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <div class="pill">Chapter-wise</div>
+              <h3>📚 Chapter-wise Solutions</h3>
+              <p>All chapters with easy explanations & answers.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Ch 1 – Prose</a>
+                <a class="btn" href="#">Ch 2 – Poetry</a>
+                <a class="btn" href="#">Ch 3 – Supplementary</a>
+                <a class="btn" href="#">More Chapters</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Practice</div>
+              <h3>❓ MCQ</h3>
+              <p>Chapter-wise and mixed objective tests.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">MCQ – Prose</a>
+                <a class="btn" href="#">MCQ – Poetry</a>
+                <a class="btn" href="#">MCQ – Supplementary</a>
+                <a class="btn" href="#">Full Syllabus MCQ</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Listen</div>
+              <h3>🎧 Audio Lessons</h3>
+              <p>Listen & revise on the go.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Audio – Prose</a>
+                <a class="btn" href="#">Audio – Poetry</a>
+                <a class="btn" href="#">Audio – Supplementary</a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="pill">Exam</div>
+              <h3>📝 Sample Papers</h3>
+              <p>Board-style papers with marking scheme.</p>
+              <div class="btnrow">
+                <a class="btn" href="#">Sample Paper – Set A</a>
+                <a class="btn" href="#">Sample Paper – Set B</a>
+                <a class="btn" href="#">Answer Keys</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 StudyNote. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
